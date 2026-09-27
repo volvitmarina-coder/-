@@ -1,0 +1,6 @@
+{
+  "name": "Angļu valodas skaņu vārdnīca bērniem",
+  "description": "Vienkārša un jautra angļu valodas vārdu pareizrakstības un skaņu apguves lietotne bērniem ar latviešu valodas asociācijām.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

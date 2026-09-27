@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-minecraft {
+    font-family: 'Press Start 2P', monospace;
+  }
+  .font-pixel {
+    font-family: 'Silkscreen', cursive;
+  }
+}
+
+/* Minecraft Pixelated Theme & Beveled Box Shadows */
+.mc-card {
+  background-color: #c6c6c6;
+  border: 3px solid #000;
+  box-shadow: inset -3px -3px 0px 0px #555555, inset 3px 3px 0px 0px #ffffff;
+}
+
+.mc-card-dark {
+  background-color: #2b2b2b;
+  border: 3px solid #000;
+  box-shadow: inset -3px -3px 0px 0px #181818, inset 3px 3px 0px 0px #4d4d4d;
+}
+
+.mc-card-dirt {
+  background: #3e2723;
+  border: 3px solid #1a0f0b;
+  box-shadow: inset -3px -3px 0px 0px #271406, inset 3px 3px 0px 0px #5d3a1a;
+}
+
+.mc-slot {
+  background-color: #8b8b8b;
+  border: 2px solid #373737;
+  box-shadow: inset 2px 2px 0px 0px #373737, inset -2px -2px 0px 0px #ffffff;
+}
+
+.mc-slot-empty {
+  background-color: #383838;
+  border: 3px solid #1f1f1f;
+  box-shadow: inset 3px 3px 0px 0px #111111, inset -2px -2px 0px 0px #555555;
+}
+
+.mc-btn {
+  background: #737373;
+  border: 2px solid #000000;
+  box-shadow: inset -2px -4px 0px 0px #444444, inset 2px 2px 0px 0px #aeaeae;
+  text-shadow: 1px 1px #222222;
+  transition: all 0.05s ease;
+}
+
+.mc-btn:hover {
+  background: #858585;
+}
+
+.mc-btn:active {
+  box-shadow: inset 2px 2px 0px 0px #333333, inset -2px -2px 0px 0px #666666;
+  transform: translateY(2px);
+}
+
+.mc-btn-green {
+  background: #4b8b29;
+  border: 2px solid #153308;
+  box-shadow: inset -2px -4px 0px 0px #274e11, inset 2px 2px 0px 0px #79c54e;
+  text-shadow: 1px 1px #0f2005;
+}
+
+.mc-btn-green:hover {
+  background: #5aa133;
+}
+
+.mc-btn-gold {
+  background: #df9e10;
+  border: 2px solid #4a3400;
+  box-shadow: inset -2px -4px 0px 0px #825a04, inset 2px 2px 0px 0px #ffdb58;
+  text-shadow: 1px 1px #4a3400;
+}
+
+.mc-btn-gold:hover {
+  background: #f0ab16;
+}
+
+.mc-btn-diamond {
+  background: #2ea6a6;
+  border: 2px solid #0f4040;
+  box-shadow: inset -2px -4px 0px 0px #186060, inset 2px 2px 0px 0px #5de5e5;
+  text-shadow: 1px 1px #092626;
+}
+
+.mc-btn-diamond:hover {
+  background: #39bebe;
+}
+
+.mc-btn-red {
+  background: #a62e2e;
+  border: 2px solid #400f0f;
+  box-shadow: inset -2px -4px 0px 0px #601818, inset 2px 2px 0px 0px #e55d5d;
+  text-shadow: 1px 1px #260909;
+}
+
+.mc-text-shadow {
+  text-shadow: 2px 2px 0px #181818;
+}
+
+.mc-green-glow {
+  text-shadow: 0 0 8px #55ff55, 2px 2px 0px #005500;
+}
+
+/* Background pixel grass/dirt pattern */
+.mc-dirt-bg {
+  background-color: #493320;
+  background-image: 
+    radial-gradient(#3a2614 25%, transparent 25%),
+    radial-gradient(#2d1c0d 25%, transparent 25%);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
